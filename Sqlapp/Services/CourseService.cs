@@ -25,7 +25,7 @@ namespace Sqlapp.Services
 
         private static Lazy<ConnectionMultiplexer> CreateConnection()
         {
-            string cache_connectionstring = "redisatinjune21.redis.cache.windows.net:6380,password=fkfvPRV4q+dc2PcYTI+yTq6lZjE+X89wizuq4l4xPuQ=,ssl=True,abortConnect=False";
+            string cache_connectionstring = "redisu36.redis.cache.windows.net:6380,password=pYB1JrsrdlRM7QfNI5SVIKF9WglChy2LtAzCaOsTexk=,ssl=True,abortConnect=False";
             return new Lazy<ConnectionMultiplexer>(() =>
             {
                 return ConnectionMultiplexer.Connect(cache_connectionstring);
